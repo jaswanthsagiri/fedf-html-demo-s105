@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements Demo</title>
+    <style>
+        *{
+            background-color: antiquewhite;
+        }
+        #b1{
+        background-color: blue;
+        }
+        #b2{
+        background-color: red;
+        }
+        #b3{
+        background-color: blue;
+        }
+        #b1:hover{
+            cursor: pointer;
+            background-color: chocolate;
+        }
+        nav{
+            background-color: aqua;
+        }
+        nav a{
+            text-decoration: none;
+            padding: 10px 50px;
+        }
+        header h1{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1 align="center">Welcome To My Portfolio</h1></header>
+    <nav>
+        <a href="#">Personal Information</a>
+        <a href="#">Preferences</a>
+        <a href="#">Aditional Information</a>
+    </nav><br>
+    <form action="#" method="get">
+        <fieldset>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>Full Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter Your Full Name" required/><br><br>
+            <label>Emali:</label>
+            <input type="text" id="email" name="email" placeholder="Enter email.@gmali.com" required/><br><br>
+            <label>Password:</label>
+            <input type="password" id="name" name="password" required/><br><br>
+            <label>D.O.B:</label>
+            <input type="date" id="dob" name="dob" placeholder="select"/><br><br>
+            <label>Website URL:</label>
+            <input type="url" id="wurl" placeholder="Enter Your Website URL"/>
+            </fieldset>
+            <fieldset>
+                <legend>Preferences</legend>
+                <label>Select Gender:</label><br/>
+                <input type="radio" id="male" name="gender" value="male"/>
+                <label>Male:</label><br>
+                <input type="radio" id="female" name="gender" value="female"/>
+                <label>Female:</label><br><br>
+                <label>Languages:</label><br>
+                <input type="checkbox" id="Languages" name="Languages" />
+                <label>Telugu</label><br>
+                <input type="checkbox" id="Languages" name="Languages" />
+                <label>Hindi</label><br>
+                <input type="checkbox" id="Languages" name="Languages" />
+                <label>English</label>
+                <br>
+                <br>
+                <label>Country:</label>
+                <select id="Country">
+                <option value=" ">Select</option>
+                <option value="India">India</option>
+                <option value="England">England</option>
+                <option value="USA">USA</option></select>
+                <br>
+                <br>
+                <label>About Me</label><br>
+                <textarea id="Aboutme" name="aboutme" rows="10" placeholder="Give Introduction About You" required></textarea>
+
+            </fieldset>
+            <fieldset>
+                <legend>Aditional Information</legend>
+                <label>Upload File:</label><br>
+                <input type="file" id="file" name="file" accept=".pdf"/>
+                <div class="buttons">
+                    <input type="submit" id="b1" value="Submit"/>
+                    <input type="reset"  id="b2"  value="Reset"/>
+                    <input type="button" id="b3" value="Onclick" onclick="alert('Button Was Clicked')"/>
+
+                </div>
+            </fieldset>
+            </fieldset>
+    </form>
+</body>
+</html>

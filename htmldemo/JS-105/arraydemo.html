@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Demo</title>
+</head>
+<body>
+    <h1>Arrays Demo In JS</h1>
+    <p id="demo"></p>
+    <script>
+        let fruits=["Banana","Apple","Mango","Grapes"];
+        document.getElementById("demo").innerText+=fruits+"\n";
+        document.getElementById("demo").innerText+="Array Elements Are: "+"\n";
+        for(i=0;i<fruits.length;i++)
+        {
+            document.getElementById("demo").innerText+=fruits[i]+"\n";
+        }
+        fruits.push("Kiwi");
+        document.getElementById("demo").innerText+="Array Elements after adding are:  "+"\n";
+        for(i=0;i<fruits.length;i++)
+        {
+            document.getElementById("demo").innerText+=fruits[i]+"\n";
+        }
+        fruits.pop("Kiwi");
+        document.getElementById("demo").innerText+="Array Elements after Deleting:  "+"\n";
+        for(i=0;i<fruits.length;i++)
+        {
+            document.getElementById("demo").innerText+=fruits[i]+"\n";
+        }
+        document.getElementById("demo").innerText+="Array Elements Using Foreach with 'in' are: \n"
+        for(let i in fruits){
+            document.getElementById("demo").innerText+=fruits[i]+"\n";
+         
+        }
+        document.getElementById("demo").innerText+="Array Elements Using Foreach with 'of' are: \n"
+
+        for(let i of fruits){
+            document.getElementById("demo").innerText+=i+"\n";
+         
+        }
+
+
+    </script>
+
+
+</body>
+</html>
